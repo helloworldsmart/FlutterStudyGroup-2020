@@ -12,7 +12,7 @@ void main() {
         ),
         body: Center(
           child: Image(
-            image: NetworkImage('https://d3gl5uvjs9q0p7.cloudfront.net/uploads/2017/11/aurora-1185464_1280-e1511447658745.jpg'),
+            image: AssetImage('images/diamond.png'),
           ),
         )
       ),
