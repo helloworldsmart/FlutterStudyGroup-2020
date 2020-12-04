@@ -13,35 +13,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Container(
-                width: 100.0,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50.0,
+                // backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/Psyduck.jpeg'),
               ),
-              Container(
-                width: 100.0,
-                height: 200.0,
-                child: Column(
-                  children: [
-                    Container(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Colors.green,
-                    )
-                  ]
+              Text(
+                'Psyduck',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
                 ),
               ),
-              Container(
-                width: 100.0,
-                color: Colors.blue,
-              )
             ],
           ),
         ),
