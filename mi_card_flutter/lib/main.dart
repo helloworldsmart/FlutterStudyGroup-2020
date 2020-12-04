@@ -13,19 +13,39 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 100.0,
-            // margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
-            // margin: EdgeInsets.fromLTRB(30.0, 10.0, 50.0, 20.0),
-            margin: EdgeInsets.only(left: 30.0),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.white,
-            child: Text('Hello'),
+          child: Column(
+            // mainAxisSize: MainAxisSize.min,
+            // verticalDirection: VerticalDirection.down,
+            // mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                width: double.infinity,
+                color: Colors.white,
+                child: Text('Container 1'),
+              ),
+              SizedBox(
+                width: 30.0,
+              ),
+              Container(
+                width: double.infinity,
+                height: 100.0,
+                color: Colors.blue,
+                child: Text('Container 2'),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100.0,
+                color: Colors.red,
+                child: Text('Container 3'),
+              ),
+            ],
           ),
-        )
+        ),
       ),
     );
   }
 }
+
 
