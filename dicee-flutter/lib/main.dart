@@ -16,8 +16,11 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
+    var leftDiceNumber = 5;
+
     return Center(
       child: Row(
         children: [
@@ -29,7 +32,7 @@ class DicePage extends StatelessWidget {
                   print('Left button get pressed!');
                 },
                 child: Image(
-                  image: AssetImage('images/dice1.png'),
+                  image: AssetImage('images/dice$leftDiceNumber.png'),
                 ),
               ),
             ),
