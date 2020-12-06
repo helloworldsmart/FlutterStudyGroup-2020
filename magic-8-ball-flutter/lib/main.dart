@@ -28,6 +28,9 @@ class _BallPageState extends State<BallPage> {
           Expanded(child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: FlatButton(
+                onPressed: () {
+                  print('I got clicked');
+                },
                 child: Image(
                   image: AssetImage('images/ball1.png'),
                 ),
